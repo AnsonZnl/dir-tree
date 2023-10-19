@@ -34,9 +34,10 @@ export const convertToDirectoryStructure = (fileList: FileList) => {
 
 export const printDirectoryStructure = (obj: any, isOne = false, prefix = "", isLast = true) => {
   let result = "";
-
+  let dirName = "";
   if (obj.type === "folder") {
     if (isOne) {
+      dirName = obj.name;
       result += prefix + obj.name + "\n";
     } else {
       result += prefix + (isLast ? "└─ " : "├─ ") + obj.name + "\n";
