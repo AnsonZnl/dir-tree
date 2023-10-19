@@ -1,5 +1,7 @@
-export const convertToDirectoryStructure = (fileList: FileList) => {
-  const directory = {
+import { DirectoryItem } from "../types";
+
+export const convertToDirectoryStructure = (fileList: FileList): DirectoryItem => {
+  const directory: DirectoryItem = {
     name: "App",
     type: "folder",
     contents: [],
@@ -13,23 +15,26 @@ export const convertToDirectoryStructure = (fileList: FileList) => {
       const segment = pathSegments[j];
       const isDirectory = j < pathSegments.length - 1;
 
-      let existingEntry = currentDirectory.contents.find((entry) => entry.name === segment);
+      let existingEntry: DirectoryItem | undefined = currentDirectory.contents?.find((entry) => entry.name === segment);
+
       if (!existingEntry) {
         existingEntry = { name: segment };
+
         if (isDirectory) {
           existingEntry.type = "folder";
           existingEntry.contents = [];
         } else {
           existingEntry.type = "file";
         }
-        currentDirectory.contents.push(existingEntry);
+
+        currentDirectory.contents?.push(existingEntry);
       }
 
       currentDirectory = existingEntry;
     }
   }
 
-  return directory.contents[0];
+  return directory.contents?.[0] || { name: "", type: "folder" };
 };
 
 export const printDirectoryStructure = (obj: any, isOne = false, prefix = "", isLast = true) => {
