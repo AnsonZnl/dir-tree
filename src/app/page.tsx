@@ -38,6 +38,7 @@ const IndexPage = () => {
           <button onClick={openFileInput} className="w-[20%] mb-4 outline-dashed outline-2  text-sm">
             选择文件夹生成目录
           </button>
+          {/* @ts-ignore */}
           <input style={{ display: "none" }} type="file" id="folderInput" ref={fileInputRef} webkitdirectory="true" directory="" multiple={true} onChange={handleFileUpload} />
           <div>
             <button className="px-4 py-2 mb-4 bg-blue-500 text-white rounded hover:bg-blue-600" onClick={copy}>
