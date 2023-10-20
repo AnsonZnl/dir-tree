@@ -33,7 +33,7 @@ const IndexPage = () => {
       <div className="h-[50px] flex">
         <h2 className=" items-center text-2xl text-slate-900">目录树🌲生成器</h2>
       </div>
-      <div className="bg-white p-8 rounded-lg shadow-lg w-[80%] h-[80%]">
+      <div className="bg-white p-8 rounded-lg shadow-lg w-[80%] max-w-[900px] h-[80%]">
         <div className="h-[14%] flex justify-between p-1 min-w-[100px]">
           <button onClick={openFileInput} className="w-[20%] mb-4 outline-dashed outline-2  text-sm">
             选择文件夹生成目录树

@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 目录树 🌲 生成器
 
-## Getting Started
+这是一个使用 Next.js 制作的目录树生成器，它能够轻松地将文件夹结构转化为树状目录，适用于在 Markdown 文档中嵌入目录结构的需求。
 
-First, run the development server:
+![image.png](https://s2.loli.net/2023/10/20/SqleYX3APO1ME8G.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 使用方法
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 在线使用
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+我们为您提供了一个在线演示，您可以通过以下链接访问：[目录树生成器 - 在线演示](https://www.zhangningle.top/dir-tree/)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 示例
 
-## Learn More
+以下是一个示例用法：
 
-To learn more about Next.js, take a look at the following resources:
+1. 点击"选择文件夹"按钮。
+2. 选择一个包含您的文件夹结构。
+3. 目录树将以树状结构显示在页面上。
+4. 单击"一键复制"按钮，将目录树复制到剪贴板以在 Markdown 中使用。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 注意事项
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- 请确保您上传的文件夹层级**不要**过深（最好在 5 层以内）
+- 复制功能在手机端或者低版本的浏览器或无法使用
 
-## Deploy on Vercel
+## 贡献
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+如果您发现任何问题或想要改进此目录树生成器，请随时提交问题或拉取请求。我们欢迎并鼓励贡献者的参与。
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 许可
+
+本项目采用 [MIT 许可证](LICENSE)。
