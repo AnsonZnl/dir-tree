@@ -8,11 +8,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "ghbuild": "next build && next export",
-    "ghdeploy": "gh-pages -d .next/out"
+    "ghbuild": "next build && next export"
   },
-  "dependencies": {
-    "gh-pages": "^6.0.0",
+  "dependencies": { 
     "next": "13.5.5",
     "react": "^18",
     "react-dom": "^18",

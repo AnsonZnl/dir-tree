@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
+const repo = "dir-tree";
+const assetPrefix = `/${repo}/`;
+const basePath = `/${repo}`;
+
 const nextConfig = {
-  // basePath: "/out/",
-  // assetPrefix: "./",
+  basePath,
+  assetPrefix,
   output: "export",
 };
 
