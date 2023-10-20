@@ -31,17 +31,17 @@ const IndexPage = () => {
     <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
       <GitHubStarButton />
       <div className="h-[50px] flex">
-        <h2 className=" items-center text-2xl text-slate-900">目录结构生成器</h2>
+        <h2 className=" items-center text-2xl text-slate-900">目录树🌲生成器</h2>
       </div>
       <div className="bg-white p-8 rounded-lg shadow-lg w-[80%] h-[80%]">
         <div className="h-[14%] flex justify-between p-1 min-w-[100px]">
           <button onClick={openFileInput} className="w-[20%] mb-4 outline-dashed outline-2  text-sm">
-            选择文件夹生成目录
+            选择文件夹生成目录树
           </button>
           {/* @ts-ignore */}
           <input style={{ display: "none" }} type="file" id="folderInput" ref={fileInputRef} webkitdirectory="true" directory="" multiple={true} onChange={handleFileUpload} />
           <div>
-            <button className="px-4 py-2 mb-4 bg-blue-500 text-white rounded hover:bg-blue-600" onClick={copy}>
+            <button className="px-4 py-2 mb-4 bg-blue-500 text-white rounded hover:bg-blue-600 user-select-none" onClick={copy}>
               一键复制
             </button>
           </div>

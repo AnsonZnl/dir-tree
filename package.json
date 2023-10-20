@@ -2,13 +2,17 @@
   "name": "dir-tree",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ansonznl.github.io/dir-tree",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "ghbuild": "next build && next export",
+    "ghdeploy": "gh-pages -d .next/out"
   },
   "dependencies": {
+    "gh-pages": "^6.0.0",
     "next": "13.5.5",
     "react": "^18",
     "react-dom": "^18",
